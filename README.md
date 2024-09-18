@@ -1,85 +1,52 @@
 **Ứng dụng Quản lý Thời gian và Hiệu suất Cá nhân**
 
-# Tính năng
+# Tính năng chính
 
-Quản lý nhiệm vụ và sự kiện (Bắt buộc)
-Đồng bộ hóa lịch (Bắt buộc)
-Nhắc nhở thông minh (Bắt buộc)
-Phân tích hiệu suất cơ bản (Ưu tiên)
-Chế độ tập trung (Ưu tiên)
-Phân tích nâng cao (Bổ sung)
-Tích hợp công cụ bên thứ ba (Bổ sung)
+1. Quản lý nhiệm vụ và sự kiện (obli)
+2. Đồng bộ hóa lịch (obli)
+3. Nhắc nhở thông minh (obli)
+4. Phân tích hiệu suất cơ bản (prio)
+5. Chế độ tập trung (prio)
+6. Phân tích nâng cao (optn)
+7. Tích hợp công cụ bên thứ ba (optn)
 
-## Step 1: Start the Metro Server
+## 1. Quản lý nhiệm vụ và sự kiện:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Tạo và chỉnh sửa nhiệm vụ**: Người dùng có thể tạo nhiệm vụ với tiêu đề, mô tả chi tiết, thời hạn hoàn thành và mức độ ưu tiên.
+- **Danh sách nhiệm vụ**: Nhiệm vụ được phân loại theo ngày, tuần, tháng hoặc theo dự án.
+- **Tạo sự kiện**: Người dùng có thể thêm các sự kiện vào lịch, bao gồm thời gian bắt đầu và kết thúc, địa điểm và ghi chú.
+- **Lọc và tìm kiếm**: Tính năng lọc và tìm kiếm nhiệm vụ/sự kiện theo từ khóa, mức độ ưu tiên, hoặc thời gian.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 2. Đồng bộ hóa lịch:
 
-```bash
-# using npm
-npm start
+- Tích hợp lịch: Tích hợp với các dịch vụ lịch như Google Calendar, Outlook để đồng bộ hóa sự kiện và nhiệm vụ.
+- Đồng bộ hai chiều: Khi người dùng cập nhật hoặc thêm nhiệm vụ/sự kiện trong ứng dụng, nó sẽ tự động đồng bộ với lịch của người dùng và ngược lại.
+- Thông báo và nhắc nhở: Gửi thông báo hoặc nhắc nhở người dùng về nhiệm vụ hoặc sự kiện sắp đến.
 
-# OR using Yarn
-yarn start
-```
+## 3. Phân tích hiệu suất:
 
-## Step 2: Start your Application
+- Theo dõi thời gian: Ghi lại thời gian dành cho mỗi nhiệm vụ/sự kiện.
+- Biểu đồ hiệu suất: Cung cấp các biểu đồ và thống kê về thời gian làm việc, hiệu suất theo tuần, tháng, và năm.
+- Phân tích năng suất: Đánh giá hiệu suất cá nhân dựa trên thời gian hoàn thành nhiệm vụ và đưa ra báo cáo chi tiết.
+- Gợi ý cải thiện: Đưa ra đề xuất cải thiện hiệu suất dựa trên dữ liệu theo dõi.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## 4. Nhắc nhở thông minh:
 
-### For Android
+- Nhắc nhở tùy chỉnh: Người dùng có thể thiết lập nhắc nhở cho từng nhiệm vụ/sự kiện.
+- Nhắc nhở dựa trên thói quen: Hệ thống tự động tạo nhắc nhở dựa trên thói quen và lịch trình của người dùng, như nhắc nhở hoàn thành nhiệm vụ còn lại cuối ngày.
+- Nhắc nhở qua nhiều kênh: Nhắc nhở có thể được gửi qua thông báo đẩy, email, hoặc SMS.
 
-```bash
-# using npm
-npm run android
+## 5. Chế độ tập trung (Focus Mode):
 
-# OR using Yarn
-yarn android
-```
+- Không làm phiền: Khi kích hoạt, chế độ này sẽ tắt tất cả thông báo và hạn chế các ứng dụng gây phân tâm.
+- Hẹn giờ tập trung: Người dùng có thể thiết lập thời gian tập trung cho một nhiệm vụ cụ thể (ví dụ: 25 phút Pomodoro).
+- Thống kê thời gian tập trung: Theo dõi thời gian đã sử dụng trong chế độ tập trung và hiển thị trong báo cáo hiệu suất.
 
-### For iOS
+## 6.Tích hợp công cụ bên thứ ba 
 
-```bash
-# using npm
-npm run ios
+- Tích hợp với ứng dụng ghi chú: Như Evernote, Google Keep để lưu trữ ý tưởng hoặc ghi chú quan trọng liên quan đến nhiệm vụ.
+- Tích hợp với ứng dụng quản lý tài liệu: Như Google Drive, Dropbox để đính kèm tài liệu liên quan đến nhiệm vụ/sự kiện
 
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+# Công nghệ
+- React Native
+- Firebase (noSQL)

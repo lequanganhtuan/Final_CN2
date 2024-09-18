@@ -1,8 +1,14 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+**Ứng dụng Quản lý Thời gian và Hiệu suất Cá nhân**
 
-# Getting Started
+# Tính năng
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Quản lý nhiệm vụ và sự kiện (Bắt buộc)
+Đồng bộ hóa lịch (Bắt buộc)
+Nhắc nhở thông minh (Bắt buộc)
+Phân tích hiệu suất cơ bản (Ưu tiên)
+Chế độ tập trung (Ưu tiên)
+Phân tích nâng cao (Bổ sung)
+Tích hợp công cụ bên thứ ba (Bổ sung)
 
 ## Step 1: Start the Metro Server
 
